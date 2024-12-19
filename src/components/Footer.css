@@ -1,0 +1,30 @@
+.footer {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 1rem 0; /* Space around text */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 0.9rem; /* Slightly smaller text size */
+  }
+  
+  .footer-links {
+    margin-top: 0.5rem; /* Space above the links */
+  }
+  
+  .footer-links a {
+    color: #fff; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    margin: 0 0.5rem; /* Space between links */
+    font-size: 0.9rem;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+  
