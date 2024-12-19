@@ -4,7 +4,7 @@ import './Footer.css';
 const Footer = () => (
   <footer className="footer">
     <p>
-      © {new Date().getFullYear()} Your Name. Built with React.
+      © {new Date().getFullYear()} Michael Fleming. Built with React.
     </p>
     <div className="footer-links">
       <a href="https://github.com/ilPacoOG" target="_blank" rel="noreferrer">
