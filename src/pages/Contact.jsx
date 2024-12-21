@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Contact.css';
+import SpeechBubble from '../assets/electric-speech-bubble.png'; // Import the bubble image
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -27,43 +28,50 @@ const Contact = () => {
   };
 
   return (
-    <section className='contact'>
-      <h2>Contact</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Name</label>
-          <input
-            type='text'
-            value={formData.name}
-            onChange={(e) =>
-              setFormData({ ...formData, name: e.target.value })
-            }
-          />
-          {errors.name && <span className='error'>{errors.name}</span>}
-        </div>
-        <div>
-          <label>Email</label>
-          <input
-            type='email'
-            value={formData.email}
-            onChange={(e) =>
-              setFormData({ ...formData, email: e.target.value })
-            }
-          />
-          {errors.email && <span className='error'>{errors.email}</span>}
-        </div>
-        <div>
-          <label>Message</label>
-          <textarea
-            value={formData.message}
-            onChange={(e) =>
-              setFormData({ ...formData, message: e.target.value })
-            }
-          />
-          {errors.message && <span className='error'>{errors.message}</span>}
-        </div>
-        <button type='submit'>Submit</button>
-      </form>
+    <section className="contact">
+      {/* Speech Bubble */}
+      <div className="speech-bubble-container">
+        <img src={SpeechBubble} alt="Contact" className="speech-bubble-image" />
+      </div>
+
+      {/* Form Container */}
+      <div className="contact-container">
+        <form onSubmit={handleSubmit}>
+          <label>
+            Name
+            <input
+              type="text"
+              value={formData.name}
+              onChange={(e) =>
+                setFormData({ ...formData, name: e.target.value })
+              }
+            />
+            {errors.name && <span className="error">{errors.name}</span>}
+          </label>
+          <label>
+            Email
+            <input
+              type="email"
+              value={formData.email}
+              onChange={(e) =>
+                setFormData({ ...formData, email: e.target.value })
+              }
+            />
+            {errors.email && <span className="error">{errors.email}</span>}
+          </label>
+          <label>
+            Message
+            <textarea
+              value={formData.message}
+              onChange={(e) =>
+                setFormData({ ...formData, message: e.target.value })
+              }
+            ></textarea>
+            {errors.message && <span className="error">{errors.message}</span>}
+          </label>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
     </section>
   );
 };
