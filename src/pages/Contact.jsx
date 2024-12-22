@@ -2,6 +2,9 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import './Contact.css';
 
+// Import the image
+import electricContactImage from '/src/assets/images/electriccontact.png';
+
 const Contact = () => {
   const form = useRef();
   const [successMessage, setSuccessMessage] = useState('');
@@ -36,7 +39,7 @@ const Contact = () => {
       {/* Add an image above the form */}
       <div className="image-container">
         <img
-          src="/src/assets/images/electriccontact.png"
+          src={electricContactImage} // Use the imported image
           alt="Contact Us"
           className="contact-image"
         />
