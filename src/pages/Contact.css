@@ -61,7 +61,9 @@ button:hover {
 
 .image-container {
   text-align: center;
-  margin-bottom: 1rem; /* Add spacing between the image and the form */
+  margin-bottom: 1rem;
+  color: greenyellow;
+  text-shadow: 2px 2px 0px #333;
 }
 
 .contact-image {

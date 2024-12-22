@@ -4,17 +4,19 @@ import Project from '../components/Project';
 const Portfolio = () => {
   const projects = [
     {
-      title: 'Project 1',
+      title: 'Google Books Search Engine',
       // image: '/path-to-image1.jpg',
-      liveLink: 'https://example.com/project1',
-      repoLink: 'https://github.com/yourusername/project1',
+      liveLink: 'https://book-search-engine-d40d.onrender.com',
+      repoLink: 'https://github.com/ilPacoOG/book-search-engine',
       bubbleStyle: 'speech', // Ensure the "speech" style is used
     },
     {
-      title: 'Project 2',
+      title: (<>
+        Flippity Flippin AI - <br /> Flashcard App with AI
+      </>),
       // image: '/path-to-image2.jpg',
-      liveLink: 'https://example.com/project2',
-      repoLink: 'https://github.com/yourusername/project2',
+      // liveLink: 'https://example.com/project2',
+      repoLink: 'https://github.com/ilPacoOG/flippity-flippinAI',
       bubbleStyle: 'speech', // Apply the "speech" style here as well
     },
   ];
