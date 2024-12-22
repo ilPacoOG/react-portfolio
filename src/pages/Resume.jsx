@@ -5,7 +5,7 @@ const Resume = () => {
   return (
     <section className="resume">
       <h2>Resume</h2>
-      <a href="/assets/resume.pdf" download className="download-resume">
+      <a href="/public/resume.pdf" download className="download-resume">
         Download My Resume
       </a>
       <h3>Proficiencies</h3>
