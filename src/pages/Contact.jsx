@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './Contact.css';
-import SpeechBubble from '../assets/electric-speech-bubble.png'; // Import the bubble image
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -29,11 +28,6 @@ const Contact = () => {
 
   return (
     <section className="contact">
-      {/* Speech Bubble */}
-      <div className="speech-bubble-container">
-        <img src={SpeechBubble} alt="Contact" className="speech-bubble-image" />
-      </div>
-
       {/* Form Container */}
       <div className="contact-container">
         <form onSubmit={handleSubmit}>

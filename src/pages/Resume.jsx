@@ -16,6 +16,8 @@ const Resume = () => {
         <li>CSS & HTML</li>
         <li>MongoDB</li>
         <li>Express</li>
+        <li>PostgresQL</li>
+        <li>Python</li>
       </ul>
     </section>
   );

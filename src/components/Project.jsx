@@ -16,7 +16,7 @@ const Project = ({ title, image, liveLink, repoLink, bubbleStyle }) => {
           </a>
         </div>
       </div>
-      <img src={image} alt={title} className="project-image" />
+      {/* <img src={image} alt={title} className="project-image" /> */}
     </div>
   );
 };

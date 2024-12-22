@@ -1,25 +1,53 @@
 .header {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  flex-wrap: wrap; /* Enable wrapping for smaller screens */
+}
+
+.header-michael {
+  width: 300px; /* Size of the Michael Fleming image */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  flex-wrap: wrap; /* Allow items to wrap into a column on smaller screens */
+  justify-content: center;
+}
+
+/* Individual nav images */
+.nav-aboutme,
+.nav-portfolio,
+.nav-contact,
+.nav-resume {
+  width: 120px; /* Default size of all nav images */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.nav-resume {
+  width: 140px; /* Slightly larger Resume image */
+}
+
+/* Spin animation */
+.animate {
+  transform: rotate(360deg);
+  transition: transform 0.5s ease; /* Smooth rotation animation */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack items vertically */
     align-items: center;
-    padding: 1rem 2rem;
-    background-color: #333;
-    color: #fff;
   }
-  
+
   .nav-links {
-    display: flex;
-    list-style: none;
-    gap: 1rem;
+    flex-direction: column; /* Align links in a column */
+    gap: 1.5rem;
   }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  .active-link {
-    font-weight: bold;
-    text-decoration: underline;
-  }
-  
+}
