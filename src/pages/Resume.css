@@ -11,11 +11,12 @@
   .download-resume {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background-color: #007bff;
+    background-color: #ff6200;
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
     margin-bottom: 1rem;
+    box-shadow: 4px 4px 3px #ffffff;
   }
   
   .download-resume:hover {
@@ -29,7 +30,8 @@
   }
   
   .resume ul li {
-    margin: 0.5rem 0;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #e63946; /* Bold red */
+    text-shadow: 2px 2px 0px #f4a261; /* Orange shadow */
   }
-  
