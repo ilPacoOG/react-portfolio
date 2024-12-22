@@ -8,8 +8,28 @@
 }
 
 .header-michael {
-  width: 300px; /* Size of the Michael Fleming image */
+  display: flex;
+  width: 600px; /* Default size for larger screens */
 }
+
+@media (max-width: 1024px) {
+  .header-michael {
+    width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-michael {
+    width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-michael {
+    width: 300px;
+  }
+}
+
 
 .nav-links {
   display: flex;

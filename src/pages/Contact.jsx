@@ -28,6 +28,14 @@ const Contact = () => {
 
   return (
     <section className="contact">
+      {/* Add an image above the form */}
+      <div className="image-container">
+        <img
+          src="/src/assets/images/electriccontact.png"
+          alt="Contact Us"
+          className="contact-image"
+        />
+      </div>
       {/* Form Container */}
       <div className="contact-container">
         <form onSubmit={handleSubmit}>
